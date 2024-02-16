@@ -1,0 +1,13 @@
+# Nmap 7.80 scan initiated Fri Feb 16 00:10:54 2024 as: nmap -p- -T4 --min-rate 5000 -vvv -o version 10.10.226.232
+Nmap scan report for 10.10.226.232 (10.10.226.232)
+Host is up, received syn-ack (0.27s latency).
+Scanned at 2024-02-16 00:10:54 -03 for 42s
+Not shown: 65532 filtered ports
+Reason: 65532 no-responses
+PORT     STATE SERVICE      REASON
+21/tcp   open  ftp          syn-ack
+80/tcp   open  http         syn-ack
+2222/tcp open  EtherNetIP-1 syn-ack
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Fri Feb 16 00:11:36 2024 -- 1 IP address (1 host up) scanned in 41.57 seconds
