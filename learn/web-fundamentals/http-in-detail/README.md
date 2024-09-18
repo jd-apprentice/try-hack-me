@@ -93,3 +93,131 @@ GET
 ## What response code might you receive if you try to edit your profile without logging in first?
 
 401
+
+# Headers
+
+Headers are additional bits of data you can send to the web server when making requests.
+
+Although no headers are strictly required when making a HTTP request, you’ll find it difficult to view a website properly.
+
+## What header tells the web server what browser is being used?
+
+User-Agent
+
+## What header tells the browser what type of data is being returned?
+
+Content-Type
+
+## What header tells the web server which website is being requested?
+
+Host
+
+# Cookies
+
+![galletas](cookies.png)
+
+## Which header is used to save cookies to your computer?
+
+Set-Cookie
+
+# Making a Request
+
+## Make a GET request to /room
+
+```shell
+HTTP/1.1 200 Ok
+Server: nginx/1.15.8
+Wed, 18 Sep 2024 1:32:14 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 252
+Last-Modified: Wed, 18 Sep 2024 1:32:14 GMT
+
+<html>
+<head>
+    <title>TryHackMe</title>
+</head>
+<body>
+    Welcome to the Room page THM{YOU'RE_IN_THE_ROOM}
+</body>
+</html>
+```
+
+## Make a GET request to /blog and using the gear icon set the id parameter to 1 in the URL field
+
+```shell
+HTTP/1.1 200 Ok
+Server: nginx/1.15.8
+Wed, 18 Sep 2024 1:33:25 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 250
+Last-Modified: Wed, 18 Sep 2024 1:33:25 GMT
+
+<html>
+<head>
+    <title>TryHackMe</title>
+</head>
+<body>
+    Viewing Blog article 1 THM{YOU_FOUND_THE_BLOG}
+</body>
+</html>
+```
+
+## Make a PUT request to /user/2 with the username parameter set to admin
+
+```shell
+HTTP/1.1 200 Ok
+Server: nginx/1.15.8
+Wed, 18 Sep 2024 1:34:13 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 250
+Last-Modified: Wed, 18 Sep 2024 1:34:13 GMT
+
+<html>
+<head>
+    <title>TryHackMe</title>
+</head>
+<body>
+    The user has been deleted THM{USER_IS_DELETED}
+</body>
+</html>
+```
+
+## Make a PUT request to /user/2 with the username parameter set to admin
+
+```shell
+HTTP/1.1 200 Ok
+Server: nginx/1.15.8
+Wed, 18 Sep 2024 1:35:1 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 251
+Last-Modified: Wed, 18 Sep 2024 1:35:1 GMT
+
+<html>
+<head>
+    <title>TryHackMe</title>
+</head>
+<body>
+    Username changed to admin THM{USER_HAS_UPDATED}
+</body>
+</html>
+```
+
+## POST the username of thm and a password of letmein to /login
+
+```shell
+HTTP/1.1 200 Ok
+Server: nginx/1.15.8
+Wed, 18 Sep 2024 1:36:40 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 256
+Last-Modified: Wed, 18 Sep 2024 1:36:40 GMT
+
+<html>
+<head>
+    <title>TryHackMe</title>
+</head>
+<body>
+    You logged in! Welcome Back THM{HTTP_REQUEST_MASTER}
+</body>
+</html>
+```
