@@ -1,0 +1,9 @@
+root:root
+root:password
+root:12345
+admin:root
+admin:password
+admin:12345
+user:root
+user:password
+user:12345
